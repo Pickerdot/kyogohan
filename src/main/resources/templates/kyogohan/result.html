@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title th:text="${title}">きょうごはん</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="#" th:href="@{/css/bootstrap.css}" rel="stylesheet">
+    <!--デザイン用レスポンシブ化など-->
+    <link href="#" th:href="@{/css/style.css}" rel="stylesheet">
+
+</head>
+<body>
+
+
+<main>
+<div id="wrapper">
+    <div id="main">
+
+        <div id="title">
+            <h1>きょうごはん</h1>
+        </div>
+
+        <div id="demand">
+            <p>今日のごはんを決める</p>
+        </div>
+
+        <div class="result">
+            <h2 th:text="${dishName}">肉じゃがです</h2>
+        </div>
+    </div>
+
+    <div id="mark"></div>
+
+    <div id="footer">    </div>
+
+</div>
+
+</main><!-- /.container -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="#" th:src="@{/js/bootstrap.bundle.js}" ></script>
+</body>
+</html>

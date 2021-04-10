@@ -1,0 +1,124 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url('/font/APJapanesefont.ttf');
+}
+
+body{
+    font-family: 'Myfont', sans-serif;
+}
+
+p{
+    font-size: x-large;
+}
+
+.clear_btn{
+    width: 12vh;
+    height:12vh;
+    position: absolute;
+    top:50vh;
+    left: 50%;
+    margin: auto;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    background: rgba(44,44,44,0);
+    border: none;
+    color: rgba(44,44,44,0);
+}
+
+#main{
+    background-color:white;
+    width:100vw;
+    height: 84vh;
+    margin: auto;
+}
+
+#footer{
+    background-color: #666666;
+    width:100vw;
+    height: 10vh;
+    top: 90vh;
+}
+
+#mark{
+    height: 6vh;
+    width: 100vw;
+    top:84vh;
+    background-size:contain;
+    background-repeat:repeat-x;
+    background-position:top center;
+    background-image:url('/images/KnifeAndFork.png');
+}
+
+#title{
+    position: relative;
+    top : 5vh;
+    margin: auto;
+    text-align:center
+}
+
+#demand{
+    position:relative;
+    top :28vh;
+    margin: auto;
+    text-align:center
+}
+
+.result{
+    width: 100vh;
+    height: 9vh;
+    top:50vh;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin: auto;
+    text-align:center;
+
+}
+
+#circle3{
+    height: 12vh;
+    width: 100vh;
+    top:50vh;
+    padding: auto;
+    left: 50%;
+    position: absolute;
+    margin: auto;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+#circle3 h4{
+    margin: auto;
+    text-align: center;
+    margin-top: 4vh;
+}
+
+#circle1{
+    width: 12vh;
+    height:12vh;
+    border-radius: 50%;
+    background: #f1f1f1;;
+    position: absolute;
+    top:50vh;
+    left: 50%;
+    border: solid 3px #777777;
+    margin: auto;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+
+  #circle2{
+    width: 9vh;
+    height: 9vh;
+    top:50vh;
+    left: 50%;
+    border-radius: 50%;
+    background:#f9f9f9f9;
+    position: absolute;
+    border: solid 2px #666666;
+    margin: auto;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }

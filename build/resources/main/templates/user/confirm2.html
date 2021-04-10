@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">Insert title here</title>
+</head>
+<body>
+<h1>Welcome!!</h1>
+<div th:object="${userForm}">
+    <h2 th:text="*{userName}"></h2>
+    <form method="post" action="#" th:action="@{/user/form2}">
+        <input type="hidden" name="userName" th:value="*{userName}">
+        <input type="hidden" name="userMail" th:value="*{userMail}">
+        <input type="submit" value="Go Back">
+    </form>
+    <form method="post" action="#" th:action="@{/user/complete2}">
+        <input type="hidden" name="userName" th:value="*{userName}">
+        <input type="hidden" name="userMail" th:value="*{userMail}">
+        <input type="submit" value="Complete">
+    </form>
+</div>
+</body>
+</html>
