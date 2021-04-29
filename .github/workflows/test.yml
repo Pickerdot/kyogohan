@@ -12,7 +12,7 @@ jobs:
           # - /db/my.cnf:/etc/mysql/conf.d/my.cnf
           - /db/my.cnf:/etc/mysql/conf.d
           - /db/test.cnf:/etc/mysql/
-          - /db/test.cnf:/home/runner
+          - ./db/test.cnf:/home/runner
         env:
           MYSQL_ROOT_PASSWORD: password
     steps:
