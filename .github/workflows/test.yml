@@ -9,7 +9,7 @@ jobs:
         ports:
           - 3306:3306
         volumes:
-          - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+          - mysql/my.cnf:/etc/mysql/conf.d/my.cnf
         env:
           MYSQL_ROOT_PASSWORD: password
     steps:
