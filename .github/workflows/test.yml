@@ -8,8 +8,8 @@ jobs:
         image: mysql:5.7
         ports:
           - 3306:3306
-      volumes:
-        - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+        volumes:
+          - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
         env:
           MYSQL_ROOT_PASSWORD: password
     steps:
