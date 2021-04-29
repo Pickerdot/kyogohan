@@ -9,8 +9,8 @@ jobs:
         ports:
           - 3306:3306
         volumes:
-          - test:/etc/mysql
-          - mysql:/etc/mysql
+          - test/test.txt:/etc/mysql/test.txt
+          # - mysql:/etc/mysql
         env:
           MYSQL_ROOT_PASSWORD: password
     steps:
