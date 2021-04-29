@@ -9,11 +9,10 @@ jobs:
         ports:
           - 3306:3306
         volumes:
-          - /db/my.cnf:/etc/mysql/conf.d/my.cnf
+          # - /db/my.cnf:/etc/mysql/conf.d/my.cnf
         env:
           MYSQL_ROOT_PASSWORD: password
     steps:
     - uses: actions/checkout@v1
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
-      
