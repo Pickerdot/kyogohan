@@ -9,7 +9,7 @@ jobs:
         ports:
           - 3306:3306
         volumes:
-          - db/my.cnf:/home/runner/my.cnf
+          - db:/home/runner/
         env:
           MYSQL_ROOT_PASSWORD: password
     steps:
